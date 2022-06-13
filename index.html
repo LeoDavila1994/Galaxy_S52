@@ -12,9 +12,7 @@
     <header>
         <nav>
             <div class="nav-flex">
-
                 <div class="container-title">
-                    
                     <div class="logo-one left-mar">
                         <button class="icon-nav direction direction-x" onclick="menuBtn()"><img src="./images/menu 2.svg" alt="icon-menu" class="icon-nav"></button>
                         <div class="menu-list">
@@ -50,11 +48,50 @@
                         <img src="./images/heart 1.svg" alt="icon-heart" class="icon-nav">
                     </div>
                     <div class="logo-car rigth-mar">
-                        <img src="./images/car-principal.svg" alt="icon-car" class="icon-nav">
+                        <button class="icon-nav direction direction-x" onclick="carBtn()"><img src="./images/car-principal.svg" alt="icon-car" class="icon-nav"></button>
+                        <div class="car hidden-eight" id="car-list">        
+                            <div class="car-btn-x">
+                                <button class="icon-nav direction direction-x" onclick="carBtn()"><img src="./images/X_1.svg" class="icon-nav"></button>
+                            </div>
+                            <div class="car-all">
+                                <div class="car-title">
+                                    <h5 class="text-big">Carrito de compras</h5>
+                                </div>
+                            </div>
+                            <div class="car-info">
+                                <div class="car-grid d-grid">
+                                    <div class="img-cel-mini">
+                                        <img src="./images/image 1.jpg" alt="">
+                                    </div>
+                                    <div class="car-text">
+                                        <p class="text-small-car color-light">SAMSUNG</p>
+                                        <p class="bold text-small padding-01">Galaxy A32</p>
+                                    </div>
+                                    <div class="car-bin">
+                                        <a href=""><img src="./images/papeleria.svg" alt="" class="icon-nav"></a>
+                                    </div>
+                                    <div class="car-count padding-05">
+                                        <form action="#">
+                                            <label for="lang"></label>
+                                            <select name="languages" id="count" class="select bold">
+                                                <option value="0">1</option>
+                                                <option value="1">2</option>
+                                                <option value="2">3</option>
+                                                <option value="3">4</option>                                  
+                                            </select>                                
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="car-price">
+                                    <p class="color-light text-small">Total <span class="price-total bold">$5,200.00</span></p>
+                                </div>
+                                <div class="btn-pay">
+                                    <button>Proceder al pago</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-
             </div>
         </nav>
     </header>
@@ -147,10 +184,20 @@
     </div>
 
     <!----------------------------Caracteristicas-------------------->
+    <div class="botones d-flex">
+        <button class="bottom-mar" onclick="optionOne()"><div class="txt-c size-div d-flex">Descripción del producto</div></button>
+        <button class="bottom-mar" onclick="optionOne(), optionTwo()"><div class="txt-c size-div d-flex">Especificaciones</div></button>
+    </div>
 
     <div class="d-flex p-size">
         <div class="top-mar">
-            <div class="bottom-mar txt-c size-div d-flex"><a href="#" class="to-hov bold sml-p">Descripción del producto</a></div>
+            <div class="as test hidden-six" id="one">
+                <p class="bottom-mar sml-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste modi id vero accusantium provident obcaecati blanditiis earum minus. Atque amet enim aut, non nisi corrupti? Magni itaque aliquam voluptatum repudiandae, cum odio placeat sint, eaque laudantium dolore pariatur, tenetur cumque ab atque provident voluptas. Incidunt similique accusamus pariatur hic dolor temporibus, eius, facilis fuga consectetur molestias possimus quis nulla consequuntur culpa numquam doloremque natus exercitationem aliquid expedita ratione sit, velit iusto laudantium. Omnis, obcaecati debitis dignissimos corporis velit autem nemo alias, harum consequatur voluptatem facere aliquid? Sapiente nihil eos minima soluta, necessitatibus ea, neque incidunt laudantium consequatur officiis sed magni?</p>
+            </div>
+        </div>
+    </div>
+    <div class="p-size hidden-seven" id="two">
+        <div class="top-mar">
             <div class="d1-d">
                 <p class="bottom-mar sml-p">Tipo de pantalla</p>
                 <p class="bottom-mar sml-p">Tamaño de pantalla</p>
@@ -162,10 +209,8 @@
                 <p class="bottom-mar sml-p">Memoria expandible</p>
                 <p class="bottom-mar sml-p">NFC</p>
             </div>
-            
         </div>
         <div class="top-mar">
-            <div class="bottom-mar txt-c size-div d-flex"><a href="#" class="to-hov bold sml-p">Especificaciones</a></div>
             <div class="d1-e">
                 <p class="bottom-mar2 txt-c sml-p">Super amoled</p>
                 <p class="bottom-mar2 txt-c sml-p">6.4"</p>
